@@ -1,0 +1,105 @@
+.manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+body {
+  background-color: #edf2f8;
+}
+
+.container {
+  background-color: white;
+  margin: 15% 15% 20% 15%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 30px;
+}
+
+.card {
+  max-width: 40%;
+  object-fit: cover;
+  border-radius: 30px 0px 0px 30px;
+}
+
+.content {
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content > h1 {
+  font-weight: 700;
+  font-size: 25px;
+  color: #51596a;
+}
+
+.content > p {
+  margin: 7% auto 7%;
+  font-weight: 300;
+  color: #51596a;
+}
+
+.profile {
+  display: flex;
+  width: 100%; 
+}
+
+.pfp {
+  object-fit: cover;
+  max-width: 10%;
+  flex-grow: 1;
+  border-radius: 50px;
+
+}
+
+.profile > div {
+  margin: auto 3% auto 3%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  width: 70%;
+}
+
+.share {
+   flex-grow: 1;
+   object-fit: contain;
+   max-width: 10%;
+}
+
+.username {
+  color: #51596a;
+  font-weight: 600;
+}
+
+.date {
+  color: #51596a;
+}
+
+.attribution {
+  text-align: center;
+}
+
+@media (orientation: portrait) {
+  .container {
+    flex-direction: column;
+    margin: 15% 5% 20% 5%;
+  }
+
+  .content {
+    padding: 10%; 
+  }
+
+  .card {
+    max-width: 100%;
+    max-height: 220px;
+    border-radius: 30px 30px 0px 0px;
+
+  }
+
+  .profile {
+    margin-top: 10%;
+  }
+}
